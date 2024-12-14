@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Weather update</h1>
+        <input type="text" id="searchBar" placeholder="Search for a city...">
+        <button id="saveFavorite">Add Favorite City</button>
+        <select id="languageSelect">
+                <option value="en" selected>English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="it">Italian</option>
+                <option value="zh">Chinese</option>
+                <option value="ru">Russian</option>
+                <option value="ar">Arabic</option>
+                <option value="ja">Japanese</option>
+                <option value="pt">Portuguese</option>
+                <option value="hi">Hindi</option>
+            
+        </select>
+        
+        <select id="timeSelect">
+            <option value="12h">12 Hour</option>
+            <option value="24h">24 Hour</option>
+        </select>
+        <select id="unitSelect">
+            <option value="metric" selected>Celsius (°C)</option>
+            <option value="imperial">Fahrenheit (°F)</option>
+            <option value="standard">Kelvin (K)</option>
+        </select>  
+    </header>
+    <div id="errorMessage"></div>
+ <main> 
+       <div id="calendar">
+       <h2>Calendar</h2>
+       <input type="date" id="datePicker">
+</div>
+<div id="localTime">
+        <h2>Local Time: <span id="timeDisplay"></span></h2>
+        </div>
+        <div id="weatherInfo">
+            <div class="current-weather" id="day1">
+                <h3>Current weather</h3>
+                <img id="icon1" src="" alt="Weather Icon">
+                <p>Temperature: <span id="temp1"></span>°<span id="tempUnit"></span></p>
+                <p>Humidity: <span id="humidity1"></span>%</p>
+                <p>Wind Speed: <span id="windSpeed1"></span> km/h</p>
+            </div>
+            <div class="day-container">
+                <div class="day" id="day2">
+                    <h3>Day 2</h3>
+                    <img id="icon2" src="" alt="Weather Icon">
+                    <p>Temperature: <span id="temp2"></span>°<span id="tempUnit"></span></p>
+                    <p>Humidity: <span id="humidity2"></span>%</p>
+                    <p>Wind Speed: <span id="windSpeed2"></span> km/h</p>
+                </div>
+                <div class="day" id="day3">
+                    <h3>Day 3</h3>
+                    <img id="icon3" src="" alt="Weather Icon">
+                    <p>Temperature: <span id="temp3"></span>°<span id="tempUnit"></span></p>
+                    <p>Humidity: <span id="humidity3"></span>%</p>
+                    <p>Wind Speed: <span id="windSpeed3"></span> km/h</p>
+                </div>
+                <div class="day" id="day4">
+                    <h3>Day 4</h3>
+                    <img id="icon4" src="" alt="Weather Icon">
+                    <p>Temperature: <span id="temp4"></span>°<span id="tempUnit"></span></p>
+                    <p>Humidity: <span id="humidity4"></span>%</p>
+                    <p>Wind Speed: <span id="windSpeed4"></span> km/h</p>
+                </div>
+                <div class="day" id="day5">
+                    <h3>Day 5</h3>
+                    <img id="icon5" src="" alt="Weather Icon">
+                    <p>Temperature: <span id="temp5"></span>°<span id="tempUnit"></span></p>
+                    <p>Humidity: <span id="humidity5"></span>%</p>
+                    <p>Wind Speed: <span id="windSpeed5"></span> km/h</p>
+                </div>
+            </div>
+        </div>
+        <div id="worldMap">
+            <iframe style="border:0; width: 100%; height: 400px;" src="https://satellites.pro/plan/world_map#A" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer>
+        <table>
+        <tr>
+        <td align="middle">
+            <span class="copyright">Mukuni. All Rights Reserved. Designed and 
+             Maintained by Samuel Chiyuka, SIN: 2312293029</span>
+            <li><a href="http://www.icuzambia.net">ICU Zambia</a></li>
+            <li><a href="https://www.zrdc.org">ZRDC</a></li>
+        </td>
+    </tr>
+    </table>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
